@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">NoWater</string>
-    <string name="name_select">Enter name</string>
-    <string name="button__player_name_submit">Submit</string>
-    <string name="button__player_name_text">Select name</string>
+    <string name="main__button_text_play">Play</string>
+    <string name="main__button_text_score">Score</string>
+    <string name="main__button_text_quit">Quit</string>
+    <string name="game__button_text_shop">Shop</string>
+    <string name="game__button_text_menu">Menu</string>
 </resources>
