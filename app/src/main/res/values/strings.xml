@@ -5,4 +5,7 @@
     <string name="main__button_text_quit">Quit</string>
     <string name="game__button_text_shop">Shop</string>
     <string name="game__button_text_menu">Menu</string>
+    <string name="game__button_text_finish">Finish</string>
+    <string name="game__text_clicks">Clicks</string>
+    <string name="game__text_pages">Pages</string>
 </resources>
