@@ -21,7 +21,9 @@ public class Device {
     Sprite pic;
 
     public void init(Context context, int startingStage) { // сжимаем картинку до нужных размеров
-        Bitmap p = BitmapFactory.decodeResource(context.getResources(), bitmapId);
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 2;
+        Bitmap p = BitmapFactory.decodeResource(context.getResources(), bitmapId, options);
         int frameSizeX = (int) (size * GameView.sizeX);
         int frameSizeY = (int) (size * GameView.sizeY);
         Bitmap scaledPic = Bitmap.createScaledBitmap(
@@ -49,7 +51,10 @@ public class Device {
     }
 
     void draw(Paint paint, Canvas canvas) { // рисуем картинку
-        canvas.drawBitmap(pic.getCurrentFrame(), 0, 0, paint);
+        canvas.drawBitmap(pic.getCurrentFrame(),
+                (int) (Math.abs(GameView.sizeX - size * GameView.sizeX)) / 2,
+                (int) (Math.abs(GameView.sizeY - size * GameView.sizeY)) / 2,
+                paint);
     }
 
 }

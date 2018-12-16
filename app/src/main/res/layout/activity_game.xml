@@ -8,7 +8,7 @@
     tools:context=".GameActivity">
 
     <TextView
-        android:id="@+id/clicksView"
+        android:id="@+id/Game_PlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Game_FinishButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:id="@+id/gameLayout"
+        android:id="@+id/Game_Layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -46,15 +46,15 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/Game_ShopButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3">
+        app:layout_constraintTop_toBottomOf="@+id/Game_FinishButton">
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/shopButton"
+        android:id="@+id/Game_ShopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -63,6 +63,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button"
+        android:paddingLeft="32dp"
+        android:paddingRight="24dp"
         android:text="@string/game__button_text_shop"
         android:textAllCaps="false"
         android:textColor="@color/colorSecondaryBrown"
@@ -70,36 +72,16 @@
         app:fontFamily="serif-monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/button"
-        android:text="@string/game__button_text_menu"
-        android:textAllCaps="false"
-        android:textColor="@color/colorSecondaryBrown"
-        android:textSize="24sp"
-        app:fontFamily="serif-monospace"
-        app:layout_constraintBaseline_toBaselineOf="@+id/shopButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/pagesView"
+        android:id="@+id/Game_PagesView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/clicksView"
-        app:layout_constraintStart_toEndOf="@+id/clicksView" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/Game_PlayerName"
+        app:layout_constraintStart_toEndOf="@+id/Game_PlayerName" />
 
 </android.support.constraint.ConstraintLayout>

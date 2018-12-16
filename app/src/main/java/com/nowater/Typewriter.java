@@ -8,7 +8,8 @@ public class Typewriter extends Device {
         stageCost = 5;
         points = 0;
         clickPower = 1;
-        size = 1;
+        size = 0.8;
+        pic = null;
 
         this.name = name;
         this.price = price;

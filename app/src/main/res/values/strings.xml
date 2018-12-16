@@ -8,4 +8,9 @@
     <string name="game__button_text_finish">Finish</string>
     <string name="game__text_clicks">Clicks</string>
     <string name="game__text_pages">Pages</string>
+    <string name="game__toast_text_finish">Hmm, lets see...</string>
+    <string name="game__dialog_text_title">Finish</string>
+    <string name="game__dialog_text_message">Do you really want to finish your project?</string>
+    <string name="main__dialog_name_hint">Name..</string>
+    <string name="main__toast_empty_name">Name should not be empty</string>
 </resources>

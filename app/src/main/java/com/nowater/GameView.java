@@ -23,14 +23,23 @@ public class GameView extends SurfaceView implements Runnable {
         surfaceHolder = getHolder();
         paint = new Paint();
         device = null;
+        System.out.println("new");
         // инициализируем поток
         gameThread = new Thread(this);
         gameThread.start();
     }
 
     public void setDevice(Device device) {
-        device.init(getContext(), 0);
+        if(device.pic == null) device.init(getContext(), 0);
         this.device = device;
+    }
+
+    public void stopGame(){
+        gameRunning = false;
+    }
+
+    public void resumeGame(){
+        gameRunning = true;
     }
 
     @Override
@@ -71,7 +80,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     private void control() { // пауза на 17 миллисекунд
         try {
-            gameThread.sleep(17);
+            gameThread.sleep(170);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
