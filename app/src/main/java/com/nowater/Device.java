@@ -44,7 +44,7 @@ public class Device {
         if (points >= stageCost) {
             points -= stageCost;
             if (pic.isLastFrame()) {
-                GameActivity.pages++;
+                GameActivity.pages.add(1);
             }
             pic.nextFrame();
         }

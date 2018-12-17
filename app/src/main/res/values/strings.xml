@@ -13,4 +13,15 @@
     <string name="game__dialog_text_message">Do you really want to finish your project?</string>
     <string name="main__dialog_name_hint">Name..</string>
     <string name="main__toast_empty_name">Name should not be empty</string>
+    <string name="results__title">Results</string>
+    <string name="main__dialog_text_title">Name select</string>
+    <string name="main__dialog_text_message">Choose your name</string>
+    <string name="results__text_total_clicks">Total clicks</string>
+    <string name="results__text_total_pages">Total pages</string>
+    <string name="results__text_main_bad">Looks like you tried, but it didn\'t work out very well. Sorry, you did not disclose enough material on this topic, too much important information was left aside. This time you failed, next time work harder.</string>
+    <string name="results__text_main_good">Hmm ... Wow .. Actually pretty good. Some shortcomings are still there, but there is potential. You did a good job.</string>
+    <string name="results__text_main_teacher">Teacher</string>
+    <string name="shop__text_title">Shop</string>
+    <string name="device__text_stages">Stages</string>
+    <string name="device__text_price">Price</string>
 </resources>

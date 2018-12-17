@@ -65,9 +65,8 @@ public class GameView extends SurfaceView implements Runnable {
 
                 sizeX = surfaceHolder.getSurfaceFrame().width();
                 sizeY = surfaceHolder.getSurfaceFrame().height();
-
-                this.setDevice(GameActivity.device);
             }
+            this.setDevice(GameActivity.device);
 
             canvas = surfaceHolder.lockCanvas(); // закрываем canvas
             canvas.drawColor(getResources().getColor(R.color.colorPrimaryLight)); // заполняем фон чёрным

@@ -11,7 +11,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.RUN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -20,13 +19,24 @@
             android:name=".GameActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nowater.MainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultsActivity"></activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nowater.MainActivity" />
+        </activity>
+        <activity android:name=".ShopActivity"></activity>
     </application>
 
 </manifest>

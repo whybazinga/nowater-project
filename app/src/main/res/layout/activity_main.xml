@@ -78,6 +78,7 @@
         android:textAllCaps="false"
         android:textColor="@color/colorSecondaryBrown"
         android:textSize="18sp"
+        android:visibility="gone"
         app:fontFamily="serif-monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Main_GuidelineRight"

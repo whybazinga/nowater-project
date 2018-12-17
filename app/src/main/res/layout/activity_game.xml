@@ -11,12 +11,14 @@
         android:id="@+id/Game_PlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textColor="@color/colorSecondaryBrown"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Game_PagesView"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Game_FinishButton"
@@ -69,6 +71,7 @@
         android:textAllCaps="false"
         android:textColor="@color/colorSecondaryBrown"
         android:textSize="24sp"
+        android:visibility="gone"
         app:fontFamily="serif-monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,8 +83,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:textColor="@color/colorSecondaryBrown"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Game_PlayerName"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Game_FinishButton"
         app:layout_constraintStart_toEndOf="@+id/Game_PlayerName" />
 
 </android.support.constraint.ConstraintLayout>
